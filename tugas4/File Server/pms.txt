@@ -1,0 +1,21 @@
+1a
+1b Secara sederhana model matematika dapat dideÖnisikan sebagai suatu konstruksi matematis yang didesain untuk mempelajari suatu fenomena tertentu di dunia nyata.
+1c
+
+2a model mekanistik mencoba memberikan deskripsi sistem berdasarkan pemahaman akan tingkah-laku dari sistem tersebut atau mekanisme yang dipertimbangkan
+2b Model empiris diperoleh biasanya dari pengalaman, seperti hasil pengamatan, dan
+digunakan untuk menggambarkan suatu atau sebagaian tingkah-laku sistem yang dipelajari.
+2c Verifikasi adalah proses pemeriksaan apakah logika operasional model (program komputer) sesuai dengan logika diagram alur. 
+2d Validasi adalah proses penentuan apakah model, sebagai konseptualisasi atau abstraksi,
+merupakan representasi berarti dan akurat dari sistem nyata
+
+3. 
+1 Perumusan masalah yang menarik
+2 IdentiÖkasi variabel dan parameter yang berpengaruh
+3 Tambahkan asumsi secukupnya jika diperlukan
+4 Perumusan model matematika berdasarkan informasi yang tersedia
+5 Kajian matematis terhadap model (Analisis dan Perhitungan)
+6 Kesimpulan matematis
+7 Interpretasi
+8 Uji atau bandingkan dengan masalah nyata
+9 ModiÖkasi model
