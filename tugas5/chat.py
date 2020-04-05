@@ -10,9 +10,10 @@ class Chat:
 		self.sessions={}
 		self.users = {}
 		self.list={}
-		self.users['messi']={ 'nama': 'Lionel Messi', 'negara': 'Argentina', 'password': 'surabaya', 'incoming' : {}, 'outgoing': {}}
-		self.users['henderson']={ 'nama': 'Jordan Henderson', 'negara': 'Inggris', 'password': 'surabaya', 'incoming': {}, 'outgoing': {}}
-		self.users['lineker']={ 'nama': 'Gary Lineker', 'negara': 'Inggris', 'password': 'surabaya','incoming': {}, 'outgoing':{}}
+		self.users['orange']={ 'nama': 'Orange Cookie', 'password': 'surabaya', 'negara': 'Dessert Paradise', 'incoming' : {}, 'outgoing': {}}
+		self.users['lime']={ 'nama': 'Lime Cookie', 'password': 'surabaya', 'negara': 'Faraway Ocean', 'incoming': {}, 'outgoing': {}}
+		self.users['lemon']={ 'nama': 'Lemon Cookie', 'password': 'surabaya', 'negara': 'Dragon Valley', 'incoming': {}, 'outgoing':{}}
+		self.users['grapefruit'] = {'nama': 'Grapefruit Cookie', 'password': 'surabaya', 'negara': 'Dessert Paradise', 'incoming': {}, 'outgoing': {}}
 	def proses(self,data):
 		j=data.split(" ")
 		try:
@@ -44,11 +45,12 @@ class Chat:
 			elif (command=='list'):
 				sessionid = j[1].strip()
 				logging.warning("LIST: {}".format(sessionid))
-				pesan = "List user: "
+				pesan = ""
 				for i in self.sessions:
 					pesan+=self.sessions[i]['username']+","
 				pesan = pesan[:-1]
-				return {'status': 'OK', 'messages': pesan}
+				pessan={'List user': pesan}
+				return {'status': 'OK', 'messages': pessan}
 			else:
 				return {'status': 'ERROR', 'message': '**Protocol Tidak Benar'}
 		except KeyError:
